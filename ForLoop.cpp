@@ -49,11 +49,11 @@ int main(int argc, char const *argv[])
         }
         else if (i > 9 && i % 2 == 0)
         {
-            cout << "even";
+            cout << "even" << endl;
         }
         else if (i > 9 && i % 2 != 0)
         {
-            cout << "odd";
+            cout << "odd" << endl;
         }
     }
 
