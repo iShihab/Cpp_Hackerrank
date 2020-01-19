@@ -36,5 +36,8 @@ int main(int argc, char const *argv[])
     cin >> c;
     cin >> d;
 
+    int result = max_of_four(a, b, c, d);
+    cout << result << endl;
+
     return 0;
 }
