@@ -1,14 +1,24 @@
-// setprecision example
-#include <iostream> // std::cout, std::fixed
-#include <iomanip>  // std::setprecision
+#include <stdio.h>
+#include <cstdlib>
+
+void update(int *a, int *b)
+{
+    // Complete this function
+    int sum, sub;
+    sum = *a + *b;
+    sub = *a - *b;
+    *a = sum;
+    *b = abs(sub);
+}
 
 int main()
 {
-    double f = 3.14159;
-    std::cout << std::setprecision(5) << f << '\n';
-    std::cout << std::setprecision(9) << f << '\n';
-    std::cout << std::fixed;
-    std::cout << std::setprecision(5) << f << '\n';
-    std::cout << std::setprecision(9) << f << '\n';
+    int a, b;
+    int *pa = &a, *pb = &b;
+
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+    printf("%d\n%d", a, b);
+
     return 0;
 }
