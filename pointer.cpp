@@ -4,11 +4,11 @@
 void update(int *a, int *b)
 {
     // Complete this function
-    int *c, *d;
-    *c = *a + *b;
-    // *d = abs(*a - *b);
-    *a = *c;
-    // *b = *d;
+    int sum, sub;
+    sum = *a + *b;
+    sub = *a - *b;
+    *a = sum;
+    *b = abs(sub);
 }
 
 int main()
@@ -18,7 +18,7 @@ int main()
 
     scanf("%d %d", &a, &b);
     update(pa, pb);
-    printf("%d", a);
+    printf("%d\n%d", a, b);
 
     return 0;
 }
