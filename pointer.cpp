@@ -1,3 +1,5 @@
+//url: https://www.hackerrank.com/challenges/c-tutorial-pointer/problem?h_r=next-challenge&h_v=zen
+
 #include <stdio.h>
 #include <cstdlib> //To use abs
 
